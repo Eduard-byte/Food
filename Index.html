@@ -23,6 +23,7 @@
     <div class="header">
         <div class="container">
             <div class="menu">
+
                 <div class="logo">
                     <img src="wwwroot/images/logo-burger.svg" alt="">
                     <div class="logo__text">
@@ -36,123 +37,158 @@
                     <button class="search__send"><i class="fas fa-search"></i></button>
                 </form>
 
-                <button class="sign">Sign in</button>
+                <div class="account">
+                    <p class="user-name">User-Name</p>
+                    <button class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Cart</p>
+                    </button>
+                    <button class="exit">Exit</button>
+                    <button class="sign">Sign in</button>
+                </div>
+
             </div>
         </div>
     </div>
+
+    <div class="authorization-position">
+        <form class="authorization">
+            <h2 class="authorization__title-text">Authorization</h2>
+            <div class="authorization__form">
+                <div class="form__login">
+                    <p class="login-text">Login</p>
+                    <input placeholder="Enter login" type="text" class="login">
+                </div>
+                <div class="form__password">
+                    <p class="password-text">Password</p>
+                    <input type="password" placeholder="Enter password" type="text" class="password">
+                </div>
+                <div class="authorization__footer">
+                    <div class="authorization__admin">
+                        <p class="admin__login">Login: admin</p>
+                        <p class="admin__password">Password: admin</p>
+                    </div>
+                    <button class="authorization__button">Sign In</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="offer">
+                <div class="offer__position">
+                    <div class="offer-text">
+                        <h1 class="offer__title-text">Weekly discount</br>on special dishes</h1>
+                        <p class="offer__text">Do you want to order a dish at a discount? Have time to do it</br>within
+                            a
+                            week.
+                            Every week the dish is updated and you can</br>order it at a discount.</p>
+                    </div>
+                    <img src="wwwroot/images/offer.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="Products">
+                <h1 class="Product__title-text">Products</h1>
+                <div class="Cards">
+                    <a href="#" class="card">
+                        <img src="wwwroot/images/pizza.jpg" alt="" class="card__img">
+                        <div class="card__text">
+                            <h2 class="card__name">Pizza</h2>
+                            <div class="card__time">
+                                <p>Time:</p>
+                                <p class="Time">50min</p>
+                            </div>
+                            <div class="card__price">
+                                <p>Price:</p>
+                                <div class="price">
+                                    <p class="price__min">$25</p>
+                                    <p>—</p>
+                                    <p class="price__max">$35.25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="wwwroot/images/rols.jpg" alt="" class="card__img">
+                        <div class="card__text">
+                            <h2 class="card__name">Rolls and sushi</h2>
+                            <div class="card__time">
+                                <p>Time:</p>
+                                <p class="Time">30min</p>
+                            </div>
+                            <div class="card__price">
+                                <p>Price:</p>
+                                <div class="price">
+                                    <p class="price__min">$15</p>
+                                    <p>—</p>
+                                    <p class="price__max">$25.75</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="wwwroot/images/wok.jpg" alt="" class="card__img">
+                        <div class="card__text">
+                            <h2 class="card__name">Wok noodles</h2>
+                            <div class="card__time">
+                                <p>Time:</p>
+                                <p class="Time">45min</p>
+                            </div>
+                            <div class="card__price">
+                                <p>Price:</p>
+                                <div class="price">
+                                    <p class="price__min">$15</p>
+                                    <p>—</p>
+                                    <p class="price__max">$20</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Не доделано -->
+    <div class="category">
+        <span class="plus__vertical"></span>
+        <span class="plus__gorizontal"></span>
+        <p class="category__text">New category</p>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__menu">
+                <div class="logo">
+                    <img src="wwwroot/images/logo-burger.svg" alt="">
+                    <div class="logo__text">
+                        <p class="logo__text-name">Food store</h3>
+                        <p class="logo__text-base">Delivery</p>
+                    </div>
+                </div>
+                <div class="link">
+                    <h3 class="footer__name">Links</h3>
+                    <a href="#" class="link__email">join_duk@yandex.ru</a>
+                    <a href="#" class="link__email">private_12@gmai.ru</a>
+                </div>
+                <div class="telephone">
+                    <h3 class="footer__name">Telephone</h3>
+                    <a href="tel:+79004842911" class="telephone__number">+7 (900)-484-29-11</a>
+                </div>
+                <div class="links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
-
-<section class="section">
-    <div class="container">
-        <div class="offer">
-            <div class="offer__position">
-                <div class="offer-text">
-                    <h1 class="offer__title-text">Weekly discount</br>on special dishes</h1>
-                    <p class="offer__text">Do you want to order a dish at a discount? Have time to do it</br>within a week.
-                        Every week the dish is updated and you can</br>order it at a discount.</p>
-                </div>
-                <img src="wwwroot/images/offer.svg" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="Products">
-            <h1 class="Product__title-text">Products</h1>
-            <div class="Cards">
-                <div class="card">
-                    <div class="card__img">
-                        <img src="wwwroot/images/pizza.jpg" alt="">
-                    </div>
-                    <div class="card__text">
-                        <h2 class="card__name">Pizza</h2>
-                        <div class="card__time">
-                            <p>Time:</p>
-                            <p class="Time">50min</p>
-                        </div>
-                        <div class="card__price">
-                            <p>Price:</p>
-                            <div class="price">
-                                <p class="price__min">$25</p>
-                                <p>—</p>
-                                <p class="price__max">$35.25</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__img">
-                        <img src="wwwroot/images/rols.jpg" alt="">
-                    </div>
-                    <div class="card__text">
-                        <h2 class="card__name">Rolls and sushi</h2>
-                        <div class="card__time">
-                            <p>Time:</p>
-                            <p class="Time">30min</p>
-                        </div>
-                        <div class="card__price">
-                            <p>Price:</p>
-                            <div class="price">
-                                <p class="price__min">$15</p>
-                                <p>—</p>
-                                <p class="price__max">$25.75</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__img">
-                        <img src="wwwroot/images/wok.jpg" alt="">
-                    </div>
-                    <div class="card__text">
-                        <h2 class="card__name">Wok noodles</h2>
-                        <div class="card__time">
-                            <p>Time:</p>
-                            <p class="Time">45min</p>
-                        </div>
-                        <div class="card__price">
-                            <p>Price:</p>
-                            <div class="price">
-                                <p class="price__min">$15</p>
-                                <p>—</p>
-                                <p class="price__max">$20</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer__menu">
-            <div class="logo">
-                <img src="wwwroot/images/logo-burger.svg" alt="">
-                <div class="logo__text">
-                    <p class="logo__text-name">Food store</h3>
-                    <p class="logo__text-base">Delivery</p>
-                </div>
-            </div>
-            <div class="link">
-                <h3 class="footer__name">Links</h3>
-                <a href="#" class="link__email">join_duk@yandex.ru</a>
-                <a href="#" class="link__email">private_12@gmai.ru</a>
-            </div>
-            <div class="telephone">
-                <h3 class="footer__name">Telephone</h3>
-                <a href="tel:+79004842911" class="telephone__number">+7 (900)-484-29-11</a>
-            </div>
-            <div class="links">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-vk"></i>
-                <i class="fab fa-facebook-square"></i>
-            </div>
-        </div>
-    </div>
-</footer>
-
 </html>
