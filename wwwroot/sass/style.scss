@@ -239,12 +239,14 @@ $yellow-color: #FFE299;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card{
+    margin-bottom: 50px;
     width: 350px;
     background: #FFFFFF;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     text-decoration: none;
     color: $base-color;
@@ -290,7 +292,18 @@ $yellow-color: #FFE299;
     height: 250px;
     background-color: #E5E5E5;
     border-radius: 5px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .category__text{
+        font-size: 20px;
+        line-height: 27px;
+        color: #C4C4C4;
+        margin-top: 25px;
+    }
 }
 
 //footer
