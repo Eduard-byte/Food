@@ -230,20 +230,36 @@ $yellow-color: #FFE299;
 
 .Products{
     margin-top: 50px;
+}
+
+.new-category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .Product__title-text{
         @extend %h1-style;
+    }
+    .add-category{
+        display: flex;
+        align-items: center;
+        padding: 12px 19px;
+        //Убрать
+        display: none;
+        @extend %button-style-2;
+        i{
+            margin-right: 5px;
+        }
     }
 }
 
 .Cards{
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .card{
-    margin-bottom: 50px;
+    margin: 0 25px 50px 25px;
     width: 350px;
     background: #FFFFFF;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
@@ -287,29 +303,10 @@ $yellow-color: #FFE299;
         }
     }
 }
-.category{
-    width: 250px;
-    height: 250px;
-    background-color: #E5E5E5;
-    border-radius: 5px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .category__text{
-        font-size: 20px;
-        line-height: 27px;
-        color: #C4C4C4;
-        margin-top: 25px;
-    }
-}
 
 //footer
 
 .footer{
-    margin-top: 50px;
     background-color: #E5E5E5;
     .footer__menu{
         display: flex;
