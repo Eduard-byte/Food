@@ -38,7 +38,7 @@ $yellow-color: #FFE299;
     transition: all 0.2s ease;
     &:hover{
         background-color: $blue-color;
-        border: none;
+        border-color: #fff;
         color: #fff;
     }
 }
@@ -96,8 +96,10 @@ $yellow-color: #FFE299;
 .user-name{
     font-weight: 600;
     margin-right: 20px;
-    // Убрать
     display: none;
+    &.active{
+        display: block;
+    }
 }
 
 .cart{
@@ -112,23 +114,29 @@ $yellow-color: #FFE299;
     & i{
         margin-right: 10px;
     }
-    // Убрать
     display: none;
+    &.active{
+        display: flex;
+    }
 }
 .exit{
     width: 82px;
     height: 40px;
     @extend %button-style-1;
-    // Убрать
     display: none;
+    &.active{
+        display: block;
+    }
 }
 
 .sign{
     width: 82px;
     height: 40px;
     @extend %button-style-1;
-    // Убрать
-    // display: none;
+    display: block;
+    &.active{
+        display: none;
+    }
 }
 
 // Authorization
@@ -141,8 +149,10 @@ $yellow-color: #FFE299;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    // Убрать
     display: none;
+    &.active{
+        display: flex;
+    }
 }
 
 .authorization{
@@ -243,13 +253,22 @@ $yellow-color: #FFE299;
         display: flex;
         align-items: center;
         padding: 12px 19px;
-        //Убрать
         display: none;
         @extend %button-style-2;
         i{
             margin-right: 5px;
         }
+        &.active{
+            display: flex;
+        }
     }
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #E5E5E5;
+    display: block;
 }
 
 .Cards{
@@ -261,7 +280,7 @@ $yellow-color: #FFE299;
 .card{
     margin: 0 25px 50px 25px;
     width: 350px;
-    background: #FFFFFF;
+    background: #fff;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     text-decoration: none;
