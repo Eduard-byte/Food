@@ -52,6 +52,7 @@
     </div>
 
     <div class="authorization-position">
+        <!-- Обязательно перенести в form -->
         <div class="authorization">
             <h2 class="authorization__title-text">Authorization</h2>
             <div class="authorization__form">
@@ -68,7 +69,7 @@
                         <p class="admin__login">Login: admin</p>
                         <p class="admin__password">Password: admin</p>
                     </div>
-                    <button href="#" class="authorization__button">Sign In</button>
+                    <button class="authorization__button">Sign In</button>
                 </div>
             </div>
         </div>
@@ -100,8 +101,30 @@
                         <i class="fas fa-plus"></i>
                         <p>Category</p>
                     </button>
+
                 </div>
                 <span class="line"></span>
+
+                <div class="category-position">
+                    <!-- Add category -->
+                    <!-- Переделать в form -->
+                    <div class="form-category">
+                        <button class="category__add-image">
+                            <p>Add image</p>
+                        </button>
+                        <div class="category__section">
+                            <div class="category__name">
+                                <p>Name category</p>
+                                <input type="text" placeholder="Enter category" class="category__add-name">
+                            </div>
+                            <div class="category-btns">
+                                <button class="btn__back-category">Back</button>
+                                <button class="btn__add-category">Add category</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="Cards">
                     <a href="#" class="card">
                         <img src="wwwroot/images/pizza.jpg" alt="" class="card__img">
@@ -157,45 +180,6 @@
                             </div>
                         </div>
                     </a>
-
-                    <a href="#" class="card">
-                        <img src="wwwroot/images/wok.jpg" alt="" class="card__img">
-                        <div class="card__text">
-                            <h2 class="card__name">Wok noodles</h2>
-                            <div class="card__time">
-                                <p>Time:</p>
-                                <p class="Time">45min</p>
-                            </div>
-                            <div class="card__price">
-                                <p>Price:</p>
-                                <div class="price">
-                                    <p class="price__min">$15</p>
-                                    <p>—</p>
-                                    <p class="price__max">$20</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" class="card">
-                        <img src="wwwroot/images/wok.jpg" alt="" class="card__img">
-                        <div class="card__text">
-                            <h2 class="card__name">Wok noodles</h2>
-                            <div class="card__time">
-                                <p>Time:</p>
-                                <p class="Time">45min</p>
-                            </div>
-                            <div class="card__price">
-                                <p>Price:</p>
-                                <div class="price">
-                                    <p class="price__min">$15</p>
-                                    <p>—</p>
-                                    <p class="price__max">$20</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
                 </div>
             </div>
         </div>
@@ -232,4 +216,5 @@
     <script src="wwwroot/js/main.js"></script>
 
 </body>
+
 </html>

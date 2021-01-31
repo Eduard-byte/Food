@@ -4,7 +4,9 @@ const cart = document.querySelector(".cart");
 const userName = document.querySelector(".user-name");
 const authorization = document.querySelector(".authorization-position");
 const authorizationBtn = document.querySelector(".authorization__button");
+const category = document.querySelector(".category-position");
 const addCategory = document.querySelector(".add-category");
+const btnBackCategory = document.querySelector(".btn__back-category");
 
 sign.addEventListener("click", function(){
     authorization.classList.add('active');
@@ -25,4 +27,12 @@ exit.addEventListener("click", function(){
     cart.classList.remove('active');
     userName.classList.remove('active');
     addCategory.classList.remove('active');
-})
+});
+
+addCategory.addEventListener('click', function(){
+    category.classList.add('active');
+});
+
+btnBackCategory.addEventListener('click', function(){
+    category.classList.remove('active');
+});

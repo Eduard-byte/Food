@@ -143,7 +143,6 @@ $yellow-color: #FFE299;
 
 .authorization-position{
     position: fixed;
-    display: flex;
     left: 0;
     top: 0;
     width: 100%;
@@ -203,7 +202,7 @@ $yellow-color: #FFE299;
     justify-content: space-between;
     margin-top: 37px;
     & p{
-        margin-top: 5px;
+        margin-top: 10px;
         color: #C4C4C4;
     }
 }
@@ -263,6 +262,79 @@ $yellow-color: #FFE299;
         }
     }
 }
+
+// Форма категории
+
+.category-position{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    &.active{
+        display: flex;
+    }
+}
+
+.form-category{
+    width: 450px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: auto;
+}
+
+.category__add-image{
+    width: 100%;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    background-color: #E5E5E5;
+    p {
+        font-weight: 600;
+        font-size: 20px;
+        color:  #C4C4C4;
+        padding: 65px 0;
+    }
+}
+.category__section{
+    padding: 50px;
+}
+.category__name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+
+    }
+    .category__add-name{
+        min-width: 190px;
+        padding: 6px 19px;
+        border-radius: 5px; 
+        @extend %input-style;
+    }
+}
+
+.category-btns{
+    display: flex;
+    align-items: center;
+    margin-top: 37px;
+}
+
+.btn__back-category{
+    width: 82px;
+    height: 40px;
+    margin-right: 37px;
+    @extend %button-style-2;
+}
+
+.btn__add-category{
+    width: 240px;
+    height: 40px;
+    @extend %button-style-1;
+}
+
+
 
 .line{
     width: 100%;
