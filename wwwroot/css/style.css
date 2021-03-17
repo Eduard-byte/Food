@@ -124,13 +124,17 @@ body {
   display: none;
 }
 .exit.active {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sign {
   width: 82px;
   height: 40px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sign.active {
   display: none;

@@ -125,7 +125,10 @@ $yellow-color: #FFE299;
     @extend %button-style-1;
     display: none;
     &.active{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
 }
 
@@ -133,7 +136,9 @@ $yellow-color: #FFE299;
     width: 82px;
     height: 40px;
     @extend %button-style-1;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &.active{
         display: none;
     }
